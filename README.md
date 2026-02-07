@@ -1,7 +1,9 @@
 # 🤝 The Handshake PRO - Professional Contract Templates Platform
 
 A comprehensive web application featuring **15+ professional contract templates** with dynamic PDF generation. Built with Node.js, Express.js, PDFKit, and vanilla JavaScript.
+## 🚀 Live Demo
 
+- Frontend (Netlify): https://handshak.netlify.app/
 ## ✨ Features
 
 ### 📄 15+ Professional Templates
