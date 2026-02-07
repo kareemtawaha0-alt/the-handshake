@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Handshake Pro - Professional Contract Templates</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-handshake"></i>
+                <span>The Handshake <span class="pro-badge">PRO</span></span>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#templates">Templates</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#create">Create Contract</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Professional Contract Templates</h1>
+                <p class="hero-subtitle">Choose from 15+ professionally crafted contract templates</p>
+                <p class="hero-description">
+                    Create legally-sound agreements in minutes. From loan agreements to NDAs, 
+                    we have templates for every business need. Just select your template, 
+                    fill in the details, and download your professional PDF contract.
+                </p>
+                <a href="#templates" class="cta-button">
+                    <i class="fas fa-file-contract"></i>
+                    Browse Templates
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>15+</h3>
+                    <p>Templates</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-download"></i>
+                    <h3>Instant</h3>
+                    <p>PDF Generation</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>100%</h3>
+                    <p>Professional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section id="templates" class="templates-section">
+        <div class="container">
+            <h2 class="section-title">Choose Your Contract Template</h2>
+            <p class="section-description">Select the type of agreement you need to create</p>
+            
+            <div class="templates-grid">
+                <!-- Loan Agreement -->
+                <div class="template-card" data-template="loan">
+                    <div class="template-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Loan Agreement</h3>
+                    <p>Personal or business loans with repayment terms</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Principal amount</li>
+                        <li><i class="fas fa-check"></i> Interest rate</li>
+                        <li><i class="fas fa-check"></i> Repayment schedule</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('loan')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Service Agreement -->
+                <div class="template-card" data-template="service">
+                    <div class="template-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Service Agreement</h3>
+                    <p>Professional services and deliverables contract</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Scope of work</li>
+                        <li><i class="fas fa-check"></i> Payment terms</li>
+                        <li><i class="fas fa-check"></i> Timeline</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('service')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Rental Agreement -->
+                <div class="template-card" data-template="rental">
+                    <div class="template-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Rental/Lease Agreement</h3>
+                    <p>Property rental and lease contracts</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Property details</li>
+                        <li><i class="fas fa-check"></i> Rent amount</li>
+                        <li><i class="fas fa-check"></i> Lease duration</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('rental')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Sales Agreement -->
+                <div class="template-card" data-template="sales">
+                    <div class="template-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Sales Agreement</h3>
+                    <p>Purchase and sale of goods or property</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Item description</li>
+                        <li><i class="fas fa-check"></i> Purchase price</li>
+                        <li><i class="fas fa-check"></i> Transfer terms</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('sales')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- NDA -->
+                <div class="template-card" data-template="nda">
+                    <div class="template-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Non-Disclosure Agreement</h3>
+                    <p>Protect confidential information and trade secrets</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Confidentiality terms</li>
+                        <li><i class="fas fa-check"></i> Duration</li>
+                        <li><i class="fas fa-check"></i> Exceptions</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('nda')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Employment Contract -->
+                <div class="template-card" data-template="employment">
+                    <div class="template-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Employment Contract</h3>
+                    <p>Employee hiring and terms of employment</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Job description</li>
+                        <li><i class="fas fa-check"></i> Salary & benefits</li>
+                        <li><i class="fas fa-check"></i> Start date</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('employment')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Partnership Agreement -->
+                <div class="template-card" data-template="partnership">
+                    <div class="template-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Partnership Agreement</h3>
+                    <p>Business partnership and profit sharing</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Partnership terms</li>
+                        <li><i class="fas fa-check"></i> Profit distribution</li>
+                        <li><i class="fas fa-check"></i> Responsibilities</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('partnership')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Freelance Contract -->
+                <div class="template-card" data-template="freelance">
+                    <div class="template-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Freelance Contract</h3>
+                    <p>Independent contractor and project agreements</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Project scope</li>
+                        <li><i class="fas fa-check"></i> Deliverables</li>
+                        <li><i class="fas fa-check"></i> Payment milestones</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('freelance')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Payment Plan -->
+                <div class="template-card" data-template="payment">
+                    <div class="template-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payment Plan Agreement</h3>
+                    <p>Installment payment arrangements</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Total amount</li>
+                        <li><i class="fas fa-check"></i> Installments</li>
+                        <li><i class="fas fa-check"></i> Due dates</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('payment')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Consulting Agreement -->
+                <div class="template-card" data-template="consulting">
+                    <div class="template-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Consulting Agreement</h3>
+                    <p>Professional consulting services contract</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Consulting scope</li>
+                        <li><i class="fas fa-check"></i> Hourly/project rate</li>
+                        <li><i class="fas fa-check"></i> Duration</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('consulting')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Vehicle Sales -->
+                <div class="template-card" data-template="vehicle">
+                    <div class="template-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Vehicle Sales Agreement</h3>
+                    <p>Car, motorcycle, or vehicle purchase contract</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Vehicle details</li>
+                        <li><i class="fas fa-check"></i> Sale price</li>
+                        <li><i class="fas fa-check"></i> Warranties</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('vehicle')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Contractor Agreement -->
+                <div class="template-card" data-template="contractor">
+                    <div class="template-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Contractor Agreement</h3>
+                    <p>Construction and contractor services</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Work description</li>
+                        <li><i class="fas fa-check"></i> Materials & labor</li>
+                        <li><i class="fas fa-check"></i> Completion date</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('contractor')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Roommate Agreement -->
+                <div class="template-card" data-template="roommate">
+                    <div class="template-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Roommate Agreement</h3>
+                    <p>Shared living space and responsibilities</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Rent split</li>
+                        <li><i class="fas fa-check"></i> Utilities</li>
+                        <li><i class="fas fa-check"></i> House rules</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('roommate')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Confidentiality Agreement -->
+                <div class="template-card" data-template="confidentiality">
+                    <div class="template-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Confidentiality Agreement</h3>
+                    <p>General confidentiality and privacy protection</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Protected info</li>
+                        <li><i class="fas fa-check"></i> Obligations</li>
+                        <li><i class="fas fa-check"></i> Term length</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('confidentiality')">
+                        Select Template
+                    </button>
+                </div>
+
+                <!-- Settlement Agreement -->
+                <div class="template-card" data-template="settlement">
+                    <div class="template-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Settlement Agreement</h3>
+                    <p>Dispute resolution and settlement terms</p>
+                    <ul class="template-features">
+                        <li><i class="fas fa-check"></i> Dispute details</li>
+                        <li><i class="fas fa-check"></i> Settlement terms</li>
+                        <li><i class="fas fa-check"></i> Release of claims</li>
+                    </ul>
+                    <button class="select-template-btn" onclick="selectTemplate('settlement')">
+                        Select Template
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="features">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3>1. Select Template</h3>
+                    <p>Choose from our library of 15+ professional contract templates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>2. Fill Details</h3>
+                    <p>Complete the smart form with your specific contract information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>3. Download PDF</h3>
+                    <p>Get your professionally formatted contract instantly as a PDF.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Form Section -->
+    <section id="create" class="form-section" style="display: none;">
+        <div class="container">
+            <div class="form-header">
+                <button class="back-btn" onclick="backToTemplates()">
+                    <i class="fas fa-arrow-left"></i> Back to Templates
+                </button>
+                <h2 class="section-title" id="formTitle">Create Your Contract</h2>
+                <p class="section-description" id="formDescription">Fill out the information below</p>
+            </div>
+
+            <!-- Messages -->
+            <div id="successMessage" class="message success-message" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <span>Contract generated successfully! Your download will begin shortly.</span>
+            </div>
+
+            <div id="errorMessage" class="message error-message" style="display: none;">
+                <i class="fas fa-exclamation-circle"></i>
+                <span id="errorText">Please fill out all required fields.</span>
+            </div>
+
+            <!-- Dynamic Form Container -->
+            <form id="contractForm" class="contract-form">
+                <div id="formFieldsContainer">
+                    <!-- Fields will be dynamically inserted here -->
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="submit-button" id="submitBtn">
+                        <i class="fas fa-file-pdf"></i>
+                        Generate Contract PDF
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 The Handshake Pro. All rights reserved.</p>
+            <p class="disclaimer">
+                <i class="fas fa-info-circle"></i>
+                Disclaimer: These templates provide basic contract structures. For complex legal matters, 
+                please consult with a licensed attorney.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>Generating your professional contract...</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
